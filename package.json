@@ -1,0 +1,13 @@
+{
+  "name": "chillventure-landingpage",
+  "version": "1.0.0",
+  "description": "Chillventure landing page with Vercel Web Analytics",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
