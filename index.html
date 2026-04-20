@@ -49,6 +49,13 @@
             --light-bg: #F7FAFC;
             --blue-footer: #0F3446;
         }
+        html, body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
 
         body {
             font-family: "Urbanist", sans-serif;
@@ -122,6 +129,7 @@
             line-height: 1.2;
             margin-bottom: 20px;
         }
+
         .btn-primary-custom {
             background-color: var(--primary-color);
             color: white;
@@ -147,6 +155,14 @@
         .btn-outline-custom:hover {
             background-color: white;
             color: var(--text-dark);
+        }
+
+        @media (max-width: 767px) {
+            .hero-title{ font-size: 2.5rem;}
+            .hero-subtitle { font-size: 0.8rem; }
+            .btn-primary-custom { padding: 10px 15px; }
+             .btn-outline-custom { padding: 10px 15px; }
+
         }
 
         .section-header {
@@ -905,9 +921,9 @@
                     <div class="collage-grid">
                         <img src="/images/images-7.webp?q=80&w=800&auto=format&fit=crop" alt="Chillventure" class="grid-img-square" data-aos="fade-up" data-aos-duration="1000">
                         
-                        <img src="/images/images-6.webp" alt="Chillventure" class="grid-img-tall" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="/images/images-6.webp" alt="Chillventure" class="grid-img-tall" data-aos="fade-up" data-aos-duration="1200">
                         
-                        <img src="/images/images-9.webp?q=80&w=800&auto=format&fit=crop"  alt="Chillventure" class="grid-img-square" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="/images/images-9.webp?q=80&w=800&auto=format&fit=crop"  alt="Chillventure" class="grid-img-square" data-aos="fade-up" data-aos-duration="1300">
                     </div>
                 </div>
 
@@ -1113,7 +1129,7 @@
     </section>
 
 
-    <section class="review-section">
+    <!-- <section class="review-section">
         <div class="container">
             
             <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
@@ -1197,7 +1213,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
     
     <section class="faq-section">
         <div class="container">
@@ -1306,7 +1322,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                    <div class="footer-logo"><img src="/images/logo-black.webp" width="50%" alt="Logo Chillventure"></div>
+                    <div class="footer-logo"><img src="/images/logo-black.webp" style="max-width: 180px" alt="Logo Chillventure"></div>
                     <p class="footer-text mb-4">Di Chillventure, kami menciptakan kenangan tak terlupakan. Sebagai operator tour lokal asli Pandeglang, kami mengkhususkan diri pada pengalaman private dan open trip menuju Pulau Oar, Pulau Mangir, dan Pulau Liwungan. Kami menyusun itinerary terbaik agar Anda bisa menikmati pesona Banten dengan nyaman dan aman.</p>
                     <div class="social-icons">
                         <a href="#"><i class="bi bi-instagram"></i></a>
