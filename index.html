@@ -3,35 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chillventure.id - Jelajahi Surga Tersembunyi Banten</title>
+    <title>Open Trip Pulau Oar, Mangir & Liwungan | Chillventure Tour Pandeglang</title>
+    <meta name="description" content="Chillventure adalah operator open trip dan private tour lokal terpercaya di Pandeglang, Banten. Nikmati liburan praktis dan eksotis ke Pulau Oar, Mangir, dan Liwungan.">
+    <meta name="keywords" content="pulau oar, pulau mangir, pulau liwungan, open trip pulau oar, wisata pulau mangir, trip pulau liwungan, travel banten, tour pandeglang, private trip pandeglang, wisata bahari banten, chillventure">
+    <meta name="author" content="Chillventure.id">
+    
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.chillventure.id/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chillventure.id/">
+    <meta property="og:title" content="Open Trip Pulau Oar, Mangir & Liwungan | Chillventure">
+    <meta property="og:description" content="Liburan ke pulau eksotis di Pandeglang tanpa ribet. Semua sudah kami siapkan dari transportasi, makan, hingga aktivitas seru!">
+    <meta property="og:image" content="https://www.chillventure.id/images/images-2.webp">
+    <meta property="og:site_name" content="Chillventure">
+    <meta property="og:locale" content="id_ID">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.chillventure.id/">
+    <meta name="twitter:title" content="Open Trip Pulau Oar, Mangir & Liwungan | Chillventure">
+    <meta name="twitter:description" content="Liburan ke pulau eksotis di Pandeglang tanpa ribet. Semua sudah kami siapkan dari transportasi, makan, hingga aktivitas seru!">
+    <meta name="twitter:image" content="https://www.chillventure.id/images/images-2.webp">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
+
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
         :root {
-            --primary-color: #3852B4; /* Warna tombol orange seperti di video */
+            --primary-color: #3852B4; 
             --dark-bg: #1A252C;
             --text-dark: #2D3748;
             --text-muted: #718096;
             --light-bg: #F7FAFC;
-            --blue-footer: #0F3446; /* Biru gelap untuk footer */
+            --blue-footer: #0F3446;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: "Urbanist", sans-serif;
             color: var(--text-dark);
             background-color: #ffffff;
         }
 
-       /* Navbar Awal (Transparan) */
 .navbar {
     padding: 25px 0;
     transition: all 0.4s ease-in-out;
@@ -39,7 +63,6 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Warna Teks Awal (Putih agar terlihat di atas Hero) */
 .navbar .navbar-brand, 
 .navbar .nav-link,
 .navbar .lang-toggle {
@@ -47,7 +70,6 @@
     transition: 0.3s;
 }
 
-/* Navbar Saat Di-scroll (Class ini akan ditambah via JS) */
 .navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.86) !important;
     padding: 12px 0;
@@ -55,7 +77,6 @@
     border-bottom: none;
 }
 
-/* Warna Teks Saat Di-scroll (Gelap) */
 .navbar.scrolled .navbar-brand {
     color: #1A252C !important;
 }
@@ -64,25 +85,22 @@
     color: #4A5568 !important;
 }
 .navbar.scrolled .nav-link:hover {
-    color: #E67E22 !important; /* Warna oranye primary */
+    color: #E67E22 !important; 
 }
 
-/* Perbaikan Responsif untuk Mobile Menu */
 @media (max-width: 991.98px) {
     .navbar-collapse {
-        background-color: #1A252C; /* Background gelap khusus menu mobile agar teks tetap terbaca */
+        background-color: #1A252C; 
         margin-top: 15px;
         padding: 20px;
         border-radius: 12px;
     }
-    /* Jika navbar sudah di-scroll, menu mobile bisa berwarna putih/terang */
     .navbar.scrolled .navbar-collapse {
         background-color: #ffffff;
         box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 }
 
-        /* Hero Section */
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('/images/images-2.webp') center/cover no-repeat;
@@ -131,14 +149,12 @@
             color: var(--text-dark);
         }
 
-        /* Section Titles */
         .section-header {
             margin-bottom: 40px;
         }
         .section-subtitle {
             font-size: 0.85rem;
             letter-spacing: 1px;
-            text-transform: uppercase;
             font-weight: 600;
             color: var(--text-muted);
         }
@@ -148,7 +164,6 @@
             color: var(--text-dark);
         }
 
-        /* Destination Cards (Surga Tersembunyi) */
         .dest-card {
             border-radius: 16px;
             overflow: hidden;
@@ -184,7 +199,6 @@
             backdrop-filter: blur(4px);
         }
 
-        /* Trip Packages (Trip Pilihan) */
         .package-bg {
             background-color: var(--light-bg);
             padding: 80px 0;
@@ -256,18 +270,17 @@
             color: var(--primary-color);
         }
 
-        /* CTA Section */
         .cta-section {
-            background: linear-gradient(135deg, var(--dark-bg), #2C3E50);
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/images/images-3.webp') center/cover no-repeat;
+            background-size: cover;
+            background-position: center;
             color: white;
             padding: 100px 0;
             text-align: center;
         }
 
-        /* Footer */
         footer {
-            background-color: var(--blue-footer);
-            color: white;
+            color: rgb(0, 0, 0);
             padding: 60px 0 30px;
         }
         .footer-logo {
@@ -276,7 +289,7 @@
             margin-bottom: 15px;
         }
         .footer-text {
-            color: #A0AEC0;
+            color: #718096;
             font-size: 0.9rem;
             line-height: 1.6;
         }
@@ -287,7 +300,7 @@
             letter-spacing: 1px;
         }
         .footer-link {
-            color: #A0AEC0;
+            color: #718096;
             text-decoration: none;
             display: block;
             margin-bottom: 10px;
@@ -315,7 +328,6 @@
             background: var(--primary-color);
         }
 
-        /* Floating WhatsApp */
         .wa-float {
             position: fixed;
             bottom: 30px;
@@ -343,7 +355,6 @@
             background-color: #ffffff;
         }
 
-        /* Tipografi Kolom Kiri */
         .about-title {
             font-size: 2.8rem;
             font-weight: 700;
@@ -359,7 +370,7 @@
             margin-bottom: 40px;
         }
         .btn-dark-pill {
-            background-color: #0B192C; /* Warna biru sangat gelap hampir hitam */
+            background-color: #0B192C; 
             color: white;
             border-radius: 50px;
             padding: 14px 35px;
@@ -376,11 +387,10 @@
             transform: translateY(-2px);
         }
 
-        /* CSS Grid untuk Kolom Tengah (Kolase Gambar) */
         .collage-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* 2 Kolom */
-            grid-template-rows: 1fr 1fr;    /* 2 Baris */
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr;   
             gap: 20px;
             height: 100%;
         }
@@ -391,7 +401,7 @@
             border-radius: 20px;
         }
         .grid-card-purple {
-            background-color: #EBE4FF; /* Ungu pastel */
+            background-color: #EBE4FF;
             border-radius: 20px;
             height: 220px;
             display: flex;
@@ -413,7 +423,7 @@
             color: #111827;
         }
         .grid-img-tall {
-            grid-row: span 2; /* Mengambil 2 baris penuh */
+            grid-row: span 2;
             width: 100%;
             height: 100%;
             min-height: 460px;
@@ -421,7 +431,6 @@
             border-radius: 20px;
         }
 
-        /* Responsif untuk Mobile */
         @media (max-width: 991px) {
             .about-title { font-size: 2.2rem; }
             .grid-img-square, .grid-card-purple { height: 180px; }
@@ -431,6 +440,412 @@
         @media (max-width: 767px) {
             .collage-grid { gap: 15px; }
         }
+        .why-choose-section {
+            padding: 80px 0;
+            background-color: #ffffff;
+        }
+
+        .section-header-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #111827;
+            letter-spacing: -1px;
+            margin-bottom: 15px;
+        }
+        
+        .section-header-desc {
+            font-size: 1.05rem;
+            color: #6B7280;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-bottom: 0;
+        }
+
+        .btn-dark-pill {
+            background-color: #0B192C;
+            color: white;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-dark-pill:hover {
+            background-color: #1E3E62;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 550px; 
+            border-radius: 24px;
+            overflow: hidden;
+            margin-top: 40px;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .video-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease;
+        }
+
+        .video-wrapper:hover::after {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .video-wrapper:hover .video-thumbnail {
+            transform: scale(1.02);
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: white;
+            font-size: 5rem; 
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .video-wrapper:hover .play-icon {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .section-header-title {
+                font-size: 2.2rem;
+            }
+            .video-wrapper {
+                height: 350px; 
+                border-radius: 16px;
+            }
+            .play-icon {
+                font-size: 4rem;
+            }
+        }
+        .review-section {
+            padding: 80px 0;
+            background-color: var(--section-bg);
+            overflow: hidden; 
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin: 0 0 10px 0;
+        }
+
+
+        .review-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 119, 182, 0.1); 
+            border: 1px solid #e2e8f0;
+            height: 100%; 
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .avatar {
+            width: auto;
+            height: 350px;
+            border-radius: 4%;
+            object-fit: cover;
+            margin-right: 15px;
+            border: 2px solid var(--light-blue);
+        }
+
+        .user-info {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .meta-data {
+            font-size: 14px;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .meta-data .username {
+            color: var(--primary-blue);
+        }
+
+        .options-icon {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .rating {
+            margin-bottom: 15px;
+        }
+
+        .rating .bi-star-fill {
+            color: #ffc107; 
+            margin-right: 2px;
+            font-size: 1.1rem;
+        }
+
+        .review-text {
+            font-size: 15px;
+            color: #4a5568;
+            line-height: 1.7;
+            margin: 0;
+            flex-grow: 1; 
+        }
+
+        .swiper-container-wrapper {
+            position: relative;
+            padding: 0 50px; 
+        }
+
+        .reviewSwiper {
+            padding: 20px 0 60px 0; 
+        }
+
+    
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--primary-blue);
+            background-color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            top: 45%; 
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px; 
+            font-weight: bold;
+        }
+        
+        .swiper-button-prev { left: -10px; }
+        .swiper-button-next { right: -10px; }
+
+        @media (max-width: 768px) {
+            .section-title { font-size: 28px; }
+            .review-card { padding: 20px; }
+            .swiper-container-wrapper { padding: 0; }
+            .swiper-button-next, .swiper-button-prev { display: none; } 
+        }
+        .faq-section {
+            padding: 100px 0;
+            background-color: #FAFAFA;
+        }
+
+        .faq-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #111827;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .faq-description {
+            font-size: 1.05rem;
+            color: #6B7280;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            padding-right: 20px;
+        }
+
+        .btn-dark-custom {
+            background-color: #0B192C; 
+            color: white;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-dark-custom:hover {
+            background-color: #1F2937;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .accordion {
+            --bs-accordion-bg: transparent;
+            --bs-accordion-border-width: 0;
+        }
+
+        .accordion-item {
+            background-color: #FFFFFF;
+            border: 1px solid #F3F4F6;
+            border-radius: 16px !important; 
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #111827;
+            padding: 24px;
+            box-shadow: none !important;
+            background-color: transparent !important;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #111827;
+        }
+
+        .accordion-button::after {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            margin-left: auto;
+            content: "\F4FE"; 
+            font-family: "bootstrap-icons";
+            font-size: 1.2rem;
+            font-weight: normal;
+            border: 1px solid #111827;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: none;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            content: "\F625"; 
+            transform: rotate(180deg);
+        }
+
+        .accordion-body {
+            padding: 0 24px 24px 24px;
+            color: #4B5563;
+            font-size: 1rem;
+            line-height: 1.6;
+            border-top: none;
+        }
+
+        @media (max-width: 991px) {
+            .faq-title {
+                font-size: 2.5rem;
+            }
+            .faq-description {
+                padding-right: 0;
+            }
+            .right-column {
+                margin-top: 40px;
+            }
+        }
+        .features-section {
+            padding: 80px 0;
+        }
+
+        .feature-icon-box {
+            width: 70px;
+            height: 70px;
+            border-radius: 18px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            flex-shrink: 0; 
+        }
+
+        .icon-blue {
+            background-color: #E8F0FE;
+            color: #1A73E8;
+        }
+        
+        .icon-purple {
+            background-color: #F3E8FD;
+            color: #9333EA;
+        }
+
+        .icon-red {
+            background-color: #FEE2E2;
+            color: #EF4444;
+        }
+
+        .icon-orange {
+            background-color: #FEF3C7;
+            color: #F59E0B;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .feature-desc {
+            font-size: 0.95rem;
+            color: #6B7280;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .feature-item {
+                margin-bottom: 30px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -438,7 +853,7 @@
     <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img id="logo" src="/images/logo.webp" alt="Chillventure.id" class="img-fluid" style="max-height: 50px;">
+                <img id="logo" src="/images/logo.webp" alt="Chillventure" class="img-fluid" style="max-height: 50px;">
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -459,12 +874,12 @@
             <div class="row">
                 <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
                     <div class="hero-subtitle">WISATA BANTEN - PANDEGLANG</div>
-                    <h1 class="hero-title">Jelajahi Keajaiban<br>Banten</h1>
+                    <h1 class="hero-title">Open Trip & Private Tour<br>Pulau Oar, Mangir & Liwungan</h1>
                     <p class="lead mb-4" style="max-width: 600px; color: #E2E8F0;">
-                        Liburan ke pulau eksotis di Pandeglang tanpa ribet. Semua sudah kami siapkan dari transportasi, makan, hingga aktivitas seru!
+                        Tour lokal Pandeglang terpercaya. Liburan eksotis tanpa ribet dengan fasilitas lengkap: kapal penyeberangan, makan seafood, hingga dokumentasi profesional.
                     </p>
                     <div class="d-flex gap-3">
-                        <a href="https://wa.me/6281234567890?text=Halo%20Chillventure!%20Saya%20ingin%20booking%20trip." class="btn btn-primary-custom" target="_blank">
+                        <a href="https://wa.me/6289625614826?text=Halo%20Chillventure!%20Saya%20ingin%20booking%20trip." class="btn btn-primary-custom" target="_blank">
                             <i class="bi bi-whatsapp"></i> Booking Sekarang
                         </a>
                         <a href="#destinasi" class="btn btn-outline-custom">Lihat Destinasi <i class="bi bi-arrow-right"></i></a>
@@ -479,20 +894,20 @@
             <div class="row align-items-center g-5">
                 
                 <div class="col-lg-6">
-                    <h2 class="about-title">Mulai Petualangan bersama Chillventure!</h2>
-                    <p class="about-desc">Di Chillventure, kami menciptakan kenangan tak terlupakan. Sebagai teman perjalanan Anda, kami mengkhususkan diri pada pengalaman private dan open trip yang disesuaikan dengan preferensi unik Anda menuju Banten - Pandeglang.</p>
-                    <a href="#" class="btn-dark-pill">
+                    <h2 class="about-title" data-aos="fade-up" data-aos-duration="1000">Mulai Petualangan bersama Chillventure!</h2>
+                    <p class="about-desc" data-aos="fade-up" data-aos-duration="1000">Di Chillventure, kami menciptakan kenangan tak terlupakan. Sebagai teman perjalanan Anda, kami mengkhususkan diri pada pengalaman private dan open trip yang disesuaikan dengan preferensi unik Anda menuju Banten - Pandeglang.</p>
+                    <a href="#" class="btn-dark-pill" data-aos="fade-up" data-aos-duration="1800">
                         Pelajari Lebih Lanjut <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
 
                 <div class="col-lg-6">
                     <div class="collage-grid">
-                        <img src="/images/images-7.webp?q=80&w=800&auto=format&fit=crop" alt="Pemandangan Alam" class="grid-img-square">
+                        <img src="/images/images-7.webp?q=80&w=800&auto=format&fit=crop" alt="Chillventure" class="grid-img-square" data-aos="fade-up" data-aos-duration="1000">
                         
-                        <img src="/images/images-6.webp" alt="Traveler" class="grid-img-tall">
+                        <img src="/images/images-6.webp" alt="Chillventure" class="grid-img-tall" data-aos="fade-up" data-aos-duration="1500">
                         
-                        <img src="/images/images-9.webp?q=80&w=800&auto=format&fit=crop"  alt="Pemandangan Alam" class="grid-img-square">
+                        <img src="/images/images-9.webp?q=80&w=800&auto=format&fit=crop"  alt="Chillventure" class="grid-img-square" data-aos="fade-up" data-aos-duration="2000">
                     </div>
                 </div>
 
@@ -521,7 +936,7 @@
                 </div>
                 <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="dest-card">
-                        <img src="/images/images-2.webp" alt="Pantai Bugel">
+                        <img src="/images/images-3.webp" alt="Pantai Bugel">
                         <div class="dest-overlay">
                             <span class="dest-category"><i class="bi bi-sunset"></i> PANTAI</span>
                             <h3 class="mt-2 mb-1 fw-bold">Pantai Bugel</h3>
@@ -531,7 +946,7 @@
                 </div>
                 <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
                     <div class="dest-card">
-                        <img src="/images/images-2.webp" alt="Pulau Mangir">
+                        <img src="/images/images-4.webp" alt="Pulau Mangir">
                         <div class="dest-overlay">
                             <span class="dest-category"><i class="bi bi-compass"></i> PULAU</span>
                             <h3 class="mt-2 mb-1 fw-bold">Pulau Mangir</h3>
@@ -542,7 +957,7 @@
                 </div>
                 <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
                     <div class="dest-card">
-                        <img src="/images/images-2.webp" alt="Pantai Bugel">
+                        <img src="/images/images-5.webp" alt="Pantai Bugel">
                         <div class="dest-overlay">
                             <span class="dest-category"><i class="bi bi-compass"></i> PULAU</span>
                             <h3 class="mt-2 mb-1 fw-bold">Pulau Liwungan</h3>
@@ -566,24 +981,24 @@
                 <p class="text-muted">Paket trip hemat dengan fasilitas lengkap. Sudah termasuk transportasi kapal, makan, dan dokumentasi.</p>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="card package-card position-relative">
                         <span class="package-badge">OPEN TRIP</span>
-                        <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=1974&auto=format&fit=crop" class="package-img" alt="Pulau Oar Trip">
+                        <img src="/images/images-5.webp" class="package-img" alt="Trip Pulau Oar, Mangir & Liwungan">
                         <div class="package-content">
-                            <h3 class="package-title">One Day Trip Pulau Oar & Mangir</h3>
-                            <p class="package-desc">Jelajahi dua pulau sekaligus dalam satu hari penuh keseruan. Cocok untuk liburan singkat di akhir pekan.</p>
+                            <h3 class="package-title">2D1N Oar, Mangir & Liwungan Island</h3>
+                            <p class="package-desc">Jelajahi tiga pulau sekaligus dalam satu hari penuh keseruan. Cocok untuk liburan singkat di akhir pekan.</p>
                             
                             <div class="package-info">
-                                <span><i class="bi bi-clock"></i> 1 Hari</span>
-                                <span><i class="bi bi-people"></i> Max 15 orang</span>
+                                <span><i class="bi bi-clock"></i> 2 Hari 1 Malam</span>
+                                <span><i class="bi bi-people"></i> Min 10 orang / grup</span>
                             </div>
                             
                             <div class="d-flex justify-content-between align-items-end mt-4">
                                 <div>
                                     <small class="text-muted">Mulai dari</small>
-                                    <div class="package-price">IDR 250.000</div>
+                                    <div class="package-price">IDR 750.000/pax</div>
                                 </div>
                                 <a href="#" class="package-detail-link">Detail <i class="bi bi-arrow-right"></i></a>
                             </div>
@@ -594,44 +1009,20 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="card package-card position-relative">
                         <span class="package-badge" style="background-color: #27AE60;">PRIVATE TRIP</span>
-                        <img src="https://images.unsplash.com/photo-1518509562904-a7ecb48fb3c6?q=80&w=1974&auto=format&fit=crop" class="package-img" alt="Pantai Bugel Trip">
+                        <img src="/images/images-4.webp" class="package-img" alt="Trip Pulau Oar, Mangir & Liwungan">
                         <div class="package-content">
-                            <h3 class="package-title">Camping Ceria Pantai Bugel</h3>
-                            <p class="package-desc">Nikmati sunset, BBQ seafood, dan bermalam di tenda eksklusif dengan fasilitas lengkap bersama keluarga/teman.</p>
+                            <h3 class="package-title">2D1N Oar, Mangir & Liwungan Island</h3>
+                            <p class="package-desc">Nikmati perjalanan private dengan itinerary yang bisa disesuaikan sesuai kebutuhan Anda.</p>
                             
                             <div class="package-info">
                                 <span><i class="bi bi-clock"></i> 2 Hari 1 Malam</span>
-                                <span><i class="bi bi-people"></i> Private Rombongan</span>
+                                <span><i class="bi bi-people"></i> 3-5 orang / grup</span>
                             </div>
                             
                             <div class="d-flex justify-content-between align-items-end mt-4">
                                 <div>
                                     <small class="text-muted">Mulai dari</small>
-                                    <div class="package-price">IDR 1.500.000</div>
-                                </div>
-                                <a href="#" class="package-detail-link">Detail <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card package-card position-relative">
-                        <span class="package-badge" style="background-color: #2980B9;">TAILOR-MADE</span>
-                        <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=2098&auto=format&fit=crop" class="package-img" alt="Explore All Banten">
-                        <div class="package-content">
-                            <h3 class="package-title">Ultimate Banten Explore</h3>
-                            <p class="package-desc">Kustomisasi perjalanan Anda ke semua pulau dan pantai Banten dengan itinerary yang bebas Anda tentukan.</p>
-                            
-                            <div class="package-info">
-                                <span><i class="bi bi-clock"></i> Sesuai Request</span>
-                                <span><i class="bi bi-people"></i> Fleksibel</span>
-                            </div>
-                            
-                            <div class="d-flex justify-content-between align-items-end mt-4">
-                                <div>
-                                    <small class="text-muted">Estimasi Harga</small>
-                                    <div class="package-price">Hubungi Kami</div>
+                                    <div class="package-price">IDR 1.400.000/pax</div>
                                 </div>
                                 <a href="#" class="package-detail-link">Detail <i class="bi bi-arrow-right"></i></a>
                             </div>
@@ -642,56 +1033,271 @@
         </div>
     </section>
 
-    <section class="py-5 my-5">
+    <section class="why-choose-section">
         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <div class="section-subtitle">TESTIMONI</div>
-                <h2 class="section-title">Kata Mereka tentang Kami</h2>
+            
+            <div class="row align-items-center">
+                <div class="col-md-8 col-lg-9" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="section-header-title">Mengapa Memilih Chillventure?</h2>
+                    <p class="section-header-desc">Di Chillventure, kami bangga memberikan pengalaman open trip dan private trip di Pandeglang terbaik. Kami memastikan setiap petualangan Anda menjelajahi pulau-pulau di Pandeglang aman, nyaman, dan tak terlupakan.</p>
+                </div>
+                
+                <div class="col-md-4 col-lg-3 text-md-end mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="1000">
+                    <a href="https://wa.me/6289625614826" target="_blank" class="btn-dark-pill">
+                        Hubungi Kami <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4 rounded-4" style="background-color: var(--light-bg);">
-                        <div class="text-warning mb-3">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+
+            <div class="video-wrapper" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=2098&auto=format&fit=crop" alt="Video Cuplikan Trip Chillventure" class="video-thumbnail">
+                
+                <i class="bi bi-play-fill play-icon"></i>
+            </div>
+
+        </div>
+         <div class="container mt-5">
+
+            <div class="row g-5"> 
+
+                <div class="col-md-6 feature-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="d-flex align-items-start gap-4" >
+                        <div class="feature-icon-box icon-blue">
+                            <i class="bi bi-compass-fill"></i>
                         </div>
-                        <p class="fst-italic mb-4">"Trip Pulau Oar dari Chillventure bener-bener seru! Guide-nya asik, dokumentasinya keren parah pake drone. Pasti bakal repat order kesini lagi!"</p>
-                        <h6 class="fw-bold mb-0">Rina Wijaya</h6>
-                        <small class="text-muted">Open Trip Pulau Oar</small>
+                        <div>
+                            <h3 class="feature-title">Kapal Penyebrangan (PP)</h3>
+                            <p class="feature-desc">Transportasi laut pulang-pergi yang aman dan nyaman menuju destinasi pulau impian Anda sudah tersedia.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4 rounded-4" style="background-color: var(--light-bg);">
-                        <div class="text-warning mb-3">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+
+                <div class="col-md-6 feature-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="feature-icon-box icon-purple">
+                            <i class="bi bi-cup-hot-fill"></i>
                         </div>
-                        <p class="fst-italic mb-4">"Camping di Pantai Bugel pelayanannya mantap. BBQ seafood-nya enak, tendanya nyaman banget. Private trip yang sangat worth it untuk keluarga."</p>
-                        <h6 class="fw-bold mb-0">Michael Chen</h6>
-                        <small class="text-muted">Private Trip Pantai Bugel</small>
+                        <div>
+                            <h3 class="feature-title">Makan 3x Sehari</h3>
+                            <p class="feature-desc">Kami menyediakan makanan 3x sehari untuk menjaga energi Anda selama berpetualang.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-4 rounded-4" style="background-color: var(--light-bg);">
-                        <div class="text-warning mb-3">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+
+                <div class="col-md-6 feature-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="feature-icon-box icon-red">
+                            <i class="bi bi-camera-fill"></i>
                         </div>
-                        <p class="fst-italic mb-4">"Pertama kali ke Banten dan langsung jatuh cinta sama Pulau Mangir. Snorkelingnya dapet view bagus banget. Thanks tim Chillventure id!"</p>
-                        <h6 class="fw-bold mb-0">Sarah Putri</h6>
-                        <small class="text-muted">Trip Pulau Mangir</small>
+                        <div>
+                            <h3 class="feature-title">Dokumentasi Profesional</h3>
+                            <p class="feature-desc">Setap momen anda kami abadikan dengan kualitas profesional dan penuh kenangan.</p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-md-6 feature-item" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="feature-icon-box icon-orange">
+                            <i class="bi bi-house-door-fill"></i>
+                        </div>
+                        <div>
+                            <h3 class="feature-title">Penginapan Vila Nyaman</h3>
+                            <p class="feature-desc">Istirahat dengan tenang di vila yang bersih dan memiliki fasilitas lengkap setelah seharian bermain di pantai.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
+
+    <section class="review-section">
+        <div class="container">
+            
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <div class="section-subtitle">REVIEWS</div>
+                <h2 class="section-title">Apa Kata Para Wisatawan Kami</h2>
+                <p class="text-muted">Testimoni para wisatawan kami tentang pengalaman tak terlupakan mereka bersama Chillventure.</p>
+            </div>
+
+            <div class="swiper-container-wrapper">
+                <div class="swiper reviewSwiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="review-card">
+                                <img src="/images/images-6.webp" alt="Reviewer Image" class="avatar">
+                                <div class="card-header">
+                                    <div class="user-info">
+                                        <h5 class="name mt-2">Azmi</h5>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="review-text">Trip ke Pulau Oar benar-benar berkesan! Pasirnya putih banget, guide-nya ramah dan jago foto. Makanan seafood-nya juara. Gak nyesel ikut open trip ini. Recommended!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="review-card">
+                                <img src="/images/images-10.webp" alt="Reviewer Image" class="avatar">
+                                <div class="card-header">
+                                    <div class="user-info">
+                                        <h5 class="name mt-2">Azmi</h5>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="review-text">Trip ke Pulau Oar benar-benar berkesan! Pasirnya putih banget, guide-nya ramah dan jago foto. Makanan seafood-nya juara. Gak nyesel ikut open trip ini. Recommended!</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000">
+                            <div class="review-card">
+                                <img src="/images/images-11.webp" alt="Reviewer Image" class="avatar">
+                                <div class="card-header">
+                                    <div class="user-info">
+                                        <h5 class="name mt-2">Azmi</h5>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="review-text">Trip ke Pulau Oar benar-benar berkesan! Pasirnya putih banget, guide-nya ramah dan jago foto. Makanan seafood-nya juara. Gak nyesel ikut open trip ini. Recommended!</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" >
+                            <div class="review-card">
+                                <img src="/images/images-6.webp" alt="Reviewer Image" class="avatar">
+                                <div class="card-header">
+                                    <div class="user-info">
+                                        <h5 class="name mt-2">Azmi</h5>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="review-text">Trip ke Pulau Oar benar-benar berkesan! Pasirnya putih banget, guide-nya ramah dan jago foto. Makanan seafood-nya juara. Gak nyesel ikut open trip ini. Recommended!</p>
+                            </div>
+                        </div>
+
+                    
+
+                    </div>
+                    
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="faq-section">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-5 pe-lg-5" data-aos="fade-up" data-aos-duration="1000">
+                    <h2 class="faq-title">Frequently Asked Questions</h2>
+                    <p class="faq-description">
+                        Punya pertanyaan? Kami punya jawabannya! Pelajari semua yang perlu Anda ketahui untuk merencanakan trip Anda bersama Chillventure dan nikmati perjalanan tanpa ribet.
+                    </p>
+                    <a href="#kontak" class="btn-dark-custom">
+                        Hubungi Kami <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="col-lg-7 right-column">
+                    <div class="accordion" id="faqAccordion">
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Bagaimana cara memesan trip di Chillventure?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Anda dapat memesan trip dengan menghubungi tim admin kami secara langsung melalui WhatsApp. Kami akan membantu Anda memilih jadwal dan paket yang tersedia.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="zoom-in" data-aos-duration="1000">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Apakah saya bisa custom itinerary?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tentu saja! Selain Open Trip, kami juga menyediakan layanan Private Trip di mana Anda bebas menentukan destinasi, durasi, dan fasilitas sesuai dengan keinginan rombongan Anda (seperti ke Pulau Oar, Mangir, dll).
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="zoom-in" data-aos-duration="1000">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Apakah trip Chillventure ramah anak?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, sebagian besar trip kami sangat ramah keluarga. Pulau Oar misalnya, memiliki ombak yang sangat tenang dan aman untuk anak-anak bermain pasir. Namun, untuk beberapa trip petualangan khusus, kami akan memberikan panduan batasan usia.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="zoom-in" data-aos-duration="1000">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Apa yang terjadi jika saya harus reschedule?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Pengubahan jadwal (reschedule) dapat dilakukan maksimal H-7 sebelum keberangkatan tanpa dikenakan biaya tambahan. Jika dilakukan melewati batas waktu tersebut, maka akan mengikuti syarat dan ketentuan pembatalan.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item" data-aos="zoom-in" data-aos-duration="1000">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Apakah harga sudah termasuk asuransi perjalanan?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, keselamatan Anda adalah prioritas kami. Semua paket perjalanan Chillventure (baik Open Trip maupun Private) sudah meng-cover asuransi perjalanan dasar selama trip berlangsung.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <section class="cta-section">
         <div class="container" data-aos="zoom-in">
             <h2 class="display-5 fw-bold mb-3">Siap untuk Petualangan?</h2>
             <p class="lead mb-5" style="color: #CBD5E0;">Hubungi kami sekarang dan wujudkan trip impian Anda bersama Chillventure.</p>
             <div class="d-flex justify-content-center gap-3">
-                <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-success px-4 py-3 rounded-pill fw-bold" style="background-color: #25D366; border: none;">
+                <a href="https://wa.me/6289625614826" target="_blank" class="btn btn-success px-4 py-3 rounded-pill fw-bold" style="background-color: #25D366; border: none;">
                     <i class="bi bi-whatsapp"></i> Chat via WhatsApp
                 </a>
-                <a href="#kontak" class="btn btn-outline-light px-4 py-3 rounded-pill fw-bold">Hubungi Kami</a>
             </div>
         </div>
     </section>
@@ -700,8 +1306,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                    <div class="footer-logo">chillventure.id</div>
-                    <p class="footer-text mb-4">Operator open trip & tailor-made tour terpercaya di Indonesia. Jelajahi keindahan Nusantara, khususnya pesona Banten bersama kami.</p>
+                    <div class="footer-logo"><img src="/images/logo-black.webp" width="50%" alt="Logo Chillventure"></div>
+                    <p class="footer-text mb-4">Di Chillventure, kami menciptakan kenangan tak terlupakan. Sebagai operator tour lokal asli Pandeglang, kami mengkhususkan diri pada pengalaman private dan open trip menuju Pulau Oar, Pulau Mangir, dan Pulau Liwungan. Kami menyusun itinerary terbaik agar Anda bisa menikmati pesona Banten dengan nyaman dan aman.</p>
                     <div class="social-icons">
                         <a href="#"><i class="bi bi-instagram"></i></a>
                         <a href="#"><i class="bi bi-tiktok"></i></a>
@@ -713,42 +1319,93 @@
                     <a href="#" class="footer-link">Pulau Oar</a>
                     <a href="#" class="footer-link">Pulau Mangir</a>
                     <a href="#" class="footer-link">Pantai Bugel</a>
-                    <a href="#" class="footer-link">Ujung Kulon</a>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
                     <h5 class="footer-title">NAVIGASI</h5>
                     <a href="#" class="footer-link">Beranda</a>
                     <a href="#" class="footer-link">Destinasi</a>
-                    <a href="#" class="footer-link">Blog</a>
                     <a href="#" class="footer-link">Tentang Kami</a>
                     <a href="#" class="footer-link">Kontak</a>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="footer-title">HUBUNGI KAMI</h5>
                     <div class="footer-text mb-2">
-                        <i class="bi bi-geo-alt-fill me-2"></i> Bogor, Jawa Barat, Indonesia
+                        <i class="bi bi-geo-alt-fill me-2"></i> Pandeglang, Banten, Indonesia
                     </div>
                     <div class="footer-text mb-2">
-                        <i class="bi bi-telephone-fill me-2"></i> +62 812-3456-7890
+                        <i class="bi bi-telephone-fill me-2"></i> +62 896-2561-4826
                     </div>
-                    <div class="footer-text">
-                        <i class="bi bi-envelope-fill me-2"></i> hello@chillventure.id
+                    <div class="footer-text mb-2">
+                        <i class="bi bi-instagram me-2"></i> @chillventure.id
                     </div>
                 </div>
             </div>
             <hr style="border-color: rgba(255,255,255,0.1); margin: 40px 0 20px;">
             <div class="text-center footer-text">
-                &copy; 2026 Chillventure.id. Hak cipta dilindungi.
+                &copy; 2026 <strong>Chillventure</strong>. Hak cipta dilindungi.
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/6281234567890?text=Halo%20Chillventure!%20Saya%20ingin%20booking%20trip." class="wa-float" target="_blank">
+    <a href="https://wa.me/6289625614826?text=Halo%20Chillventure!%20Saya%20ingin%20booking%20trip." class="wa-float" target="_blank">
         <i class="bi bi-whatsapp fs-4"></i> Chat Kami
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var swiper = new Swiper(".reviewSwiper", {
+            // Fungsionalitas Utama
+            loop: true,               // Scroll tidak habis-habis (looping)
+            grabCursor: true,          // Mengubah kursor menjadi tangan saat hover
+            centeredSlides: false,    // Mulai dari kiri
+            
+            // Autoplay (Scroll otomatis)
+            autoplay: {
+                delay: 4000,          // Ganti slide setiap 4 detik
+                disableOnInteraction: false, // Tetap autoplay meski user melakukan interaksi
+            },
+
+            // Kecepatan transisi
+            speed: 800, 
+
+            // Jumlah slide per tampilan
+            slidesPerView: 1,         // Default mobile
+            spaceBetween: 20,         // Jarak antar card
+
+            // Responsive Breakpoints
+            breakpoints: {
+                // Saat lebar layar >= 640px (tablet kecil)
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                },
+                // Saat lebar layar >= 768px (tablet besar)
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                // Saat lebar layar >= 1024px (desktop)
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+
+            // Pagination (Dots)
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,       // Dots bisa diklik
+            },
+
+            // Navigation (Panah)
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
     <script>
         // Inisialisasi Animasi AOS
         AOS.init({
@@ -768,6 +1425,7 @@
         }
     });
     </script>
+       
     <script>
   window.addEventListener("scroll", function () {
     const logo = document.getElementById("logo");
