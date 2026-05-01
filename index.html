@@ -295,9 +295,11 @@
             text-align: center;
         }
 
+        /* Footer Styling */
         footer {
             color: rgb(0, 0, 0);
             padding: 60px 0 30px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
         .footer-logo {
             font-size: 1.5rem;
@@ -324,13 +326,13 @@
             transition: 0.3s;
         }
         .footer-link:hover {
-            color: white;
+            color: var(--primary-color);
         }
         .social-icons a {
-            color: white;
+            color: var(--dark-bg);
             font-size: 1.2rem;
             margin-right: 15px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(0,0,0,0.05);
             width: 40px;
             height: 40px;
             display: inline-flex;
@@ -342,7 +344,9 @@
         }
         .social-icons a:hover {
             background: var(--primary-color);
+            color: white;
         }
+
 
         .wa-float {
             position: fixed;
@@ -508,7 +512,6 @@
         }
 
         .video-wrapper::after {
-            content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(0, 0, 0, 0.2);
@@ -542,9 +545,6 @@
             transition: transform 0.3s ease;
         }
 
-        .video-wrapper:hover .play-icon {
-            transform: translate(-50%, -50%) scale(1.1);
-        }
 
         @media (max-width: 768px) {
             .section-header-title {
@@ -766,21 +766,7 @@
         }
 
         .accordion-button::after {
-            flex-shrink: 0;
-            width: 32px;
-            height: 32px;
-            margin-left: auto;
-            content: "\F4FE"; 
-            font-family: "bootstrap-icons";
-            font-size: 1.2rem;
-            font-weight: normal;
-            border: 1px solid #111827;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-image: none;
-            transition: transform 0.3s ease;
+            color: white;
         }
 
         .accordion-button:not(.collapsed)::after {
@@ -862,6 +848,43 @@
                 margin-bottom: 30px;
             }
         }
+
+            .instagram-section .btn {
+            border-radius: 50px;
+            font-weight: 500;
+            }
+
+            .ig-single {
+            width: 100%;
+            max-width: 380px;
+            }
+
+            .instagram-media {
+            margin: 0 auto !important;
+            width: 100% !important;
+            border-radius: 16px !important;
+            overflow: hidden;
+            }
+            .package-price {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            }
+
+            .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 14px;
+            }
+
+            .promo-price {
+            color: #3852B4;
+            font-weight: 700;
+            font-size: 20px;
+            }
+           
+            
+
     </style>
 </head>
 <body>
@@ -876,9 +899,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destinasi">Destinasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/destination.html">Destinasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about-us.html">Tentang Kami</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
                 </ul>
             </div>
@@ -892,13 +915,13 @@
                     <div class="hero-subtitle">WISATA BANTEN - PANDEGLANG</div>
                     <h1 class="hero-title">Open Trip & Private Tour<br>Pulau Oar, Mangir & Liwungan</h1>
                     <p class="lead mb-4" style="max-width: 600px; color: #E2E8F0;">
-                        Tour lokal Pandeglang terpercaya. Liburan eksotis tanpa ribet dengan fasilitas lengkap: kapal penyeberangan, makan seafood, hingga dokumentasi profesional.
+                        Tour lokal Banten Pandeglang terpercaya. Liburan eksotis tanpa ribet dengan fasilitas lengkap: kapal penyeberangan, hingga dokumentasi profesional.
                     </p>
                     <div class="d-flex gap-3">
                         <a href="https://wa.me/6289625614826?text=Halo%20Chillventure!%20Saya%20ingin%20booking%20trip." class="btn btn-primary-custom" target="_blank">
                             <i class="bi bi-whatsapp"></i> Booking Sekarang
                         </a>
-                        <a href="#destinasi" class="btn btn-outline-custom">Lihat Destinasi <i class="bi bi-arrow-right"></i></a>
+                        <a href="destination.html" class="btn btn-outline-custom">Lihat Destinasi <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -912,8 +935,8 @@
                 <div class="col-lg-6">
                     <h2 class="about-title" data-aos="fade-up" data-aos-duration="1000">Mulai Petualangan bersama Chillventure!</h2>
                     <p class="about-desc" data-aos="fade-up" data-aos-duration="1000">Di Chillventure, kami menciptakan kenangan tak terlupakan. Sebagai teman perjalanan Anda, kami mengkhususkan diri pada pengalaman private dan open trip yang disesuaikan dengan preferensi unik Anda menuju Banten - Pandeglang.</p>
-                    <a href="#" class="btn-dark-pill" data-aos="fade-up" data-aos-duration="1800">
-                        Pelajari Lebih Lanjut <i class="bi bi-arrow-right"></i>
+                    <a href="#trip-package" class="btn-dark-pill" data-aos="fade-up" data-aos-duration="1800">
+                        Lihat Paket Trip <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
 
@@ -931,7 +954,7 @@
         </div>
     </section>
 
-    <section id="destinasi" class="py-5 mt-5">
+    <section id="destinasi" class="py-5 mt-2">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <div class="section-subtitle">DESTINASI UNGGULAN</div>
@@ -952,10 +975,10 @@
                 </div>
                 <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
                     <div class="dest-card">
-                        <img src="/images/images-3.webp" alt="Pantai Bugel">
+                        <img src="/images/images-3.webp" alt="Sunset Point">
                         <div class="dest-overlay">
                             <span class="dest-category"><i class="bi bi-sunset"></i> PANTAI</span>
-                            <h3 class="mt-2 mb-1 fw-bold">Pantai Bugel</h3>
+                            <h3 class="mt-2 mb-1 fw-bold">Sunset Poin</h3>
                             <p class="mb-0 text-light">Karang eksotis dan spot sunset paling dramatis.</p>
                         </div>
                     </div>
@@ -973,7 +996,7 @@
                 </div>
                 <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
                     <div class="dest-card">
-                        <img src="/images/images-5.webp" alt="Pantai Bugel">
+                        <img src="/images/images-5.webp" alt="Sunset Point">
                         <div class="dest-overlay">
                             <span class="dest-category"><i class="bi bi-compass"></i> PULAU</span>
                             <h3 class="mt-2 mb-1 fw-bold">Pulau Liwungan</h3>
@@ -984,12 +1007,12 @@
             </div>
             
             <div class="text-center mt-5">
-                <a href="#" class="text-dark fw-bold text-decoration-none">Lihat Semua Destinasi <i class="bi bi-chevron-right"></i></a>
+                <a href="destination.html" class="text-dark fw-bold text-decoration-none">Lihat Semua Destinasi <i class="bi bi-chevron-right"></i></a>
             </div>
         </div>
     </section>
 
-    <section class="package-bg mt-5">
+    <section class="package-bg mt-5" id="trip-package">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <div class="section-subtitle">PAKET OPEN TRIP & PRIVATE</div>
@@ -1014,9 +1037,12 @@
                             <div class="d-flex justify-content-between align-items-end mt-4">
                                 <div>
                                     <small class="text-muted">Mulai dari</small>
-                                    <div class="package-price">IDR 750.000/pax</div>
+                                    <div class="package-price">
+                                        <span class="old-price">IDR 850.000</span>
+                                        <span class="promo-price">IDR 750.000/pax</span>
+                                    </div>
                                 </div>
-                                <a href="#" class="package-detail-link">Detail <i class="bi bi-arrow-right"></i></a>
+                                <a href="destination.html" class="package-detail-link">Detail <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1038,9 +1064,12 @@
                             <div class="d-flex justify-content-between align-items-end mt-4">
                                 <div>
                                     <small class="text-muted">Mulai dari</small>
-                                    <div class="package-price">IDR 1.400.000/pax</div>
+                                    <div class="package-price">
+                                        <span class="old-price">IDR 1.200.000</span>
+                                        <span class="promo-price">IDR 1.000.000/pax</span>
+                                    </div>
                                 </div>
-                                <a href="#" class="package-detail-link">Detail <i class="bi bi-arrow-right"></i></a>
+                                <a href="destination.html" class="package-detail-link">Detail <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1066,12 +1095,11 @@
             </div>
 
             <div class="video-wrapper" data-aos="zoom-in" data-aos-duration="1000">
-                <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=2098&auto=format&fit=crop" alt="Video Cuplikan Trip Chillventure" class="video-thumbnail">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/cH02mMRtNjQ?si=yEBi-_Fx0CbdEtSp&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 
-                <i class="bi bi-play-fill play-icon"></i>
             </div>
-
         </div>
+        
          <div class="container mt-5">
 
             <div class="row g-5"> 
@@ -1128,8 +1156,43 @@
         </div>
     </section>
 
+    <section class="instagram-section py-4 py-md-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center g-4">
 
-    <!-- <section class="review-section">
+      <!-- LEFT: CTA -->
+      <div class="col-lg-5 text-center text-lg-start">
+        <h2 class="fw-bold mb-3">
+          Bukan Sekadar Liburan, Ini Cerita Seru Kamu 🌊
+        </h2>
+
+        <p class="mb-4">
+          Lihat langsung keseruan trip bareng kami—dari tawa di dermaga sampai
+          momen sunset yang nggak bakal kamu lupain. Jangan cuma jadi penonton 😉
+        </p>
+
+        <a href="https://www.instagram.com/chillventure.id/" target="_blank"
+           class="btn btn-primary px-4 py-2">
+          Intip Keseruannya
+        </a>
+      </div>
+
+      <!-- RIGHT: SINGLE IG -->
+      <div class="col-lg-5 d-flex justify-content-center">
+        <div class="ig-single">
+          <blockquote class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/reel/DW3cmugk4SG/"
+            data-instgrm-version="14">
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section class="review-section">
         <div class="container">
             
             <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
@@ -1147,7 +1210,7 @@
                                 <img src="/images/images-6.webp" alt="Reviewer Image" class="avatar">
                                 <div class="card-header">
                                     <div class="user-info">
-                                        <h5 class="name mt-2">Azmi</h5>
+                                        <h5 class="name mt-2">Andhika</h5>
                                     </div>
                                 </div>
                                 <div class="rating">
@@ -1162,13 +1225,13 @@
                                 <img src="/images/images-10.webp" alt="Reviewer Image" class="avatar">
                                 <div class="card-header">
                                     <div class="user-info">
-                                        <h5 class="name mt-2">Azmi</h5>
+                                        <h5 class="name mt-2">Kanur</h5>
                                     </div>
                                 </div>
                                 <div class="rating">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                 </div>
-                                <p class="review-text">Trip ke Pulau Oar benar-benar berkesan! Pasirnya putih banget, guide-nya ramah dan jago foto. Makanan seafood-nya juara. Gak nyesel ikut open trip ini. Recommended!</p>
+                                <p class="review-text">Awalnya agak ragu ikut open trip sendirian, tapi ternyata seru banget! Tim guide dari Chillventure pinter banget nyairin suasana jadi gampang akrab sama peserta lain. Yang paling juara sih hasil dokumentasinya, bener-bener berasa bawa fotografer pribadi pakai drone segala. Nggak nyesel liburan bareng tim lokal Banten!</p>
                             </div>
                         </div>
 
@@ -1177,13 +1240,13 @@
                                 <img src="/images/images-11.webp" alt="Reviewer Image" class="avatar">
                                 <div class="card-header">
                                     <div class="user-info">
-                                        <h5 class="name mt-2">Azmi</h5>
+                                        <h5 class="name mt-2">Adrian</h5>
                                     </div>
                                 </div>
                                 <div class="rating">
                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                                 </div>
-                                <p class="review-text">Trip ke Pulau Oar benar-benar berkesan! Pasirnya putih banget, guide-nya ramah dan jago foto. Makanan seafood-nya juara. Gak nyesel ikut open trip ini. Recommended!</p>
+                                <p class="review-text">Ambil paket Private Trip buat liburan bareng keluarga. Semuanya diurusin dengan rapi dan on-time dari awal sampai akhir. Kapalnya nyaman, homestay-nya bersih, dan anak-anak seneng banget pas diajak snorkeling karena guidenya sabar banget jagain di air. Recommended banget buat liburan rombongan tanpa pusing mikirin itinerary!</p>
                             </div>
                         </div>
 
@@ -1192,7 +1255,22 @@
                                 <img src="/images/images-6.webp" alt="Reviewer Image" class="avatar">
                                 <div class="card-header">
                                     <div class="user-info">
-                                        <h5 class="name mt-2">Azmi</h5>
+                                        <h5 class="name mt-2">Dhira</h5>
+                                    </div>
+                                </div>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                </div>
+                                <p class="review-text">Harga bersahabat tapi pelayanannya bintang lima. Karena mereka operator lokal asli Pandeglang, kita diajak ke spot-spot rahasia di Pulau Mangir yang terumbu karangnya masih cakep dan belum terlalu ramai. Puas banget main air seharian. Fix bakal repeat order sih kalau mau healing ke area Banten lagi!</p>
+                            </div>
+                        </div>
+
+                         <div class="swiper-slide" data-aos="zoom-in" data-aos-duration="1000" >
+                            <div class="review-card">
+                                <img src="/images/images-3.webp" alt="Reviewer Image" class="avatar">
+                                <div class="card-header">
+                                    <div class="user-info">
+                                        <h5 class="name mt-2">Dimas</h5>
                                     </div>
                                 </div>
                                 <div class="rating">
@@ -1201,7 +1279,6 @@
                                 <p class="review-text">Trip ke Pulau Oar benar-benar berkesan! Pasirnya putih banget, guide-nya ramah dan jago foto. Makanan seafood-nya juara. Gak nyesel ikut open trip ini. Recommended!</p>
                             </div>
                         </div>
-
                     
 
                     </div>
@@ -1213,7 +1290,7 @@
             </div>
 
         </div>
-    </section> -->
+    </section>
     
     <section class="faq-section">
         <div class="container">
@@ -1306,7 +1383,7 @@
 
 
 
-    <section class="cta-section">
+    <section class="cta-section" id="kontak">
         <div class="container" data-aos="zoom-in">
             <h2 class="display-5 fw-bold mb-3">Siap untuk Petualangan?</h2>
             <p class="lead mb-5" style="color: #CBD5E0;">Hubungi kami sekarang dan wujudkan trip impian Anda bersama Chillventure.</p>
@@ -1318,30 +1395,31 @@
         </div>
     </section>
 
-    <footer id="kontak">
+   <!-- Footer Section -->
+    <footer >
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                     <div class="footer-logo"><img src="/images/logo-black.webp" style="max-width: 180px" alt="Logo Chillventure"></div>
                     <p class="footer-text mb-4">Di Chillventure, kami menciptakan kenangan tak terlupakan. Sebagai operator tour lokal asli Pandeglang, kami mengkhususkan diri pada pengalaman private dan open trip menuju Pulau Oar, Pulau Mangir, dan Pulau Liwungan. Kami menyusun itinerary terbaik agar Anda bisa menikmati pesona Banten dengan nyaman dan aman.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-tiktok"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.instagram.com/chillventure.id/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@chillventure.id" target="_blank"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@chillventure_official" target="_blank"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
                     <h5 class="footer-title">DESTINASI</h5>
                     <a href="#" class="footer-link">Pulau Oar</a>
                     <a href="#" class="footer-link">Pulau Mangir</a>
-                    <a href="#" class="footer-link">Pantai Bugel</a>
+                    <a href="#" class="footer-link">Sunset Point</a>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
                     <h5 class="footer-title">NAVIGASI</h5>
-                    <a href="#" class="footer-link">Beranda</a>
-                    <a href="#" class="footer-link">Destinasi</a>
-                    <a href="#" class="footer-link">Tentang Kami</a>
-                    <a href="#" class="footer-link">Kontak</a>
+                    <a href="/" class="footer-link">Beranda</a>
+                    <a href="/destination.html" class="footer-link">Destinasi</a>
+                    <a href="/about-us.html" class="footer-link">Tentang Kami</a>
+                    <a href="#kontak" class="footer-link">Kontak</a>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="footer-title">HUBUNGI KAMI</h5>
@@ -1356,7 +1434,7 @@
                     </div>
                 </div>
             </div>
-            <hr style="border-color: rgba(255,255,255,0.1); margin: 40px 0 20px;">
+            <hr style="border-color: rgba(0,0,0,0.1); margin: 40px 0 20px;">
             <div class="text-center footer-text">
                 &copy; 2026 <strong>Chillventure</strong>. Hak cipta dilindungi.
             </div>
@@ -1453,6 +1531,7 @@
     }
   });
 </script>
+<script async src="//www.instagram.com/embed.js"></script>
 <script>
       window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
     </script>

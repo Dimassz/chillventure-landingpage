@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   
    <url>
       <loc>https://www.chillventure.id/</loc>
-      <lastmod>2026-04-21</lastmod>
+      <lastmod>2026-05-01</lastmod>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
    </url>
+
+   <!-- Halaman Destinasi / Detail Trip -->
+   <url>
+      <loc>https://www.chillventure.id/destination.html</loc>
+      <lastmod>2026-05-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Halaman Tentang Kami -->
+   <url>
+      <loc>https://www.chillventure.id/about-us.html</loc>
+      <lastmod>2026-05-01</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
 </urlset>
