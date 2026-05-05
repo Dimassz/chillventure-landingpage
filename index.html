@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open Trip Pulau Oar, Mangir & Liwungan | Chillventure Tour Pandeglang</title>
-    <meta name="description" content="Chillventure adalah operator open trip dan private tour lokal terpercaya di Pandeglang, Banten. Nikmati liburan praktis dan eksotis ke Pulau Oar, Mangir, dan Liwungan.">
+    <title>Open Trip Pandeglang & Wisata Banten | Chillventure</title>
+    <meta name="description" content="Open trip dan private tour di Pandeglang, Banten. Jelajahi Pulau Oar, Mangir, dan Liwungan dengan paket lengkap tanpa ribet.">
     <meta name="keywords" content="pulau oar, pulau mangir, pulau liwungan, open trip pulau oar, wisata pulau mangir, trip pulau liwungan, travel banten, tour pandeglang, private trip pandeglang, wisata bahari banten, chillventure">
     <meta name="author" content="Chillventure.id">
     
@@ -39,6 +39,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+        "@type": "Organization",
+        "name": "Chillventure",
+        "url": "https://www.chillventure.id",
+        "logo": "https://www.chillventure.id/images/logo.webp",
+        "sameAs": [
+            "https://www.instagram.com/",
+            "https://www.tiktok.com/"
+        ]
+        },
+        {
+        "@type": "WebSite",
+        "name": "Chillventure",
+        "url": "https://www.chillventure.id",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.chillventure.id/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+        }
+    ]
+    }
+    </script>
 
     <style>
         :root {
@@ -1450,50 +1478,39 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         var swiper = new Swiper(".reviewSwiper", {
-            // Fungsionalitas Utama
-            loop: true,               // Scroll tidak habis-habis (looping)
-            grabCursor: true,          // Mengubah kursor menjadi tangan saat hover
-            centeredSlides: false,    // Mulai dari kiri
+            loop: true,              
+            grabCursor: true,         
+            centeredSlides: false,   
             
-            // Autoplay (Scroll otomatis)
             autoplay: {
-                delay: 4000,          // Ganti slide setiap 4 detik
-                disableOnInteraction: false, // Tetap autoplay meski user melakukan interaksi
+                delay: 4000,          
+                disableOnInteraction: false, 
             },
 
-            // Kecepatan transisi
             speed: 800, 
 
-            // Jumlah slide per tampilan
-            slidesPerView: 1,         // Default mobile
-            spaceBetween: 20,         // Jarak antar card
+            slidesPerView: 1,        
+            spaceBetween: 20,        
 
-            // Responsive Breakpoints
             breakpoints: {
-                // Saat lebar layar >= 640px (tablet kecil)
                 640: {
                     slidesPerView: 1.5,
                     spaceBetween: 20,
                 },
-                // Saat lebar layar >= 768px (tablet besar)
                 768: {
                     slidesPerView: 2,
                     spaceBetween: 30,
                 },
-                // Saat lebar layar >= 1024px (desktop)
                 1024: {
                     slidesPerView: 3,
                     spaceBetween: 30,
                 },
             },
 
-            // Pagination (Dots)
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,       // Dots bisa diklik
+                clickable: true,       
             },
-
-            // Navigation (Panah)
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -1501,14 +1518,12 @@
         });
     </script>
     <script>
-        // Inisialisasi Animasi AOS
         AOS.init({
             once: true,
             offset: 50,
             duration: 800
         });
 
-        // Logika Scroll Navbar
     const navbar = document.querySelector('.navbar');
 
     window.addEventListener('scroll', () => {
